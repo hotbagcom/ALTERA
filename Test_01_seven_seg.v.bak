@@ -1,0 +1,18 @@
+module Test_0(bitsbut,sevenseg);
+input [3:0]bitsbut ;
+output [6:0]sevenseg;
+reg [6:0]number = 7'b000000;
+
+always @(*) begin
+	
+	case(bitsbut)
+		 4'b001: number=7'b0000110;
+	
+	
+	endcase
+	
+
+
+end
+assign ledline = number;
+endmodule 

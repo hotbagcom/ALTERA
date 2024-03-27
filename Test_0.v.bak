@@ -1,0 +1,16 @@
+module Verilog1(clc,switch,ledline);
+input clc,switch ;
+output [3:0]ledline;
+reg [3:0]number = 4'b0001;
+
+always @(*) begin
+	if (switch)begin
+		number = 4'b0110
+	end else begin
+		number = 4'b1001
+	end
+
+
+end
+assign ledline = number;
+endmodule 

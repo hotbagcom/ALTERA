@@ -1,0 +1,202 @@
+// Copyright (C) 1991-2013 Altera Corporation
+// Your use of Altera Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Altera Program License 
+// Subscription Agreement, Altera MegaCore Function License 
+// Agreement, or other applicable license agreement, including, 
+// without limitation, that your use is for the sole purpose of 
+// programming logic devices manufactured by Altera and sold by 
+// Altera or its authorized distributors.  Please refer to the 
+// applicable agreement for further details.
+
+// VENDOR "Altera"
+// PROGRAM "Quartus II 64-Bit"
+// VERSION "Version 13.1.0 Build 162 10/23/2013 SJ Web Edition"
+
+// DATE "03/20/2024 13:00:44"
+
+// 
+// Device: Altera EP4CE115F29C7 Package FBGA780
+// 
+
+// 
+// This Verilog file should be used for ModelSim-Altera (Verilog) only
+// 
+
+`timescale 1 ps/ 1 ps
+
+module Test_0 (
+	clc,
+	switch,
+	ledline);
+input 	clc;
+input 	switch;
+output 	[6:0] ledline;
+
+// Design Ports Information
+// switch	=>  Location: PIN_AB26,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ledline[0]	=>  Location: PIN_E21,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ledline[1]	=>  Location: PIN_E22,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ledline[2]	=>  Location: PIN_E25,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ledline[3]	=>  Location: PIN_E24,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ledline[4]	=>  Location: PIN_G19,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ledline[5]	=>  Location: PIN_F19,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ledline[6]	=>  Location: PIN_E19,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// clc	=>  Location: PIN_M23,	 I/O Standard: 2.5 V,	 Current Strength: Default
+
+
+wire gnd;
+wire vcc;
+wire unknown;
+
+assign gnd = 1'b0;
+assign vcc = 1'b1;
+assign unknown = 1'bx;
+
+tri1 devclrn;
+tri1 devpor;
+tri1 devoe;
+// synopsys translate_off
+initial $sdf_annotate("Test_0_7_1200mv_85c_v_slow.sdo");
+// synopsys translate_on
+
+wire \switch~input_o ;
+wire \ledline[0]~output_o ;
+wire \ledline[1]~output_o ;
+wire \ledline[2]~output_o ;
+wire \ledline[3]~output_o ;
+wire \ledline[4]~output_o ;
+wire \ledline[5]~output_o ;
+wire \ledline[6]~output_o ;
+wire \clc~input_o ;
+
+
+// Location: IOOBUF_X107_Y73_N9
+cycloneive_io_obuf \ledline[0]~output (
+	.i(!\clc~input_o ),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\ledline[0]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \ledline[0]~output .bus_hold = "false";
+defparam \ledline[0]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X111_Y73_N9
+cycloneive_io_obuf \ledline[1]~output (
+	.i(\clc~input_o ),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\ledline[1]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \ledline[1]~output .bus_hold = "false";
+defparam \ledline[1]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X83_Y73_N2
+cycloneive_io_obuf \ledline[2]~output (
+	.i(\clc~input_o ),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\ledline[2]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \ledline[2]~output .bus_hold = "false";
+defparam \ledline[2]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X85_Y73_N23
+cycloneive_io_obuf \ledline[3]~output (
+	.i(!\clc~input_o ),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\ledline[3]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \ledline[3]~output .bus_hold = "false";
+defparam \ledline[3]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X69_Y73_N16
+cycloneive_io_obuf \ledline[4]~output (
+	.i(\clc~input_o ),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\ledline[4]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \ledline[4]~output .bus_hold = "false";
+defparam \ledline[4]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X94_Y73_N2
+cycloneive_io_obuf \ledline[5]~output (
+	.i(!\clc~input_o ),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\ledline[5]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \ledline[5]~output .bus_hold = "false";
+defparam \ledline[5]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X94_Y73_N9
+cycloneive_io_obuf \ledline[6]~output (
+	.i(!\clc~input_o ),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\ledline[6]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \ledline[6]~output .bus_hold = "false";
+defparam \ledline[6]~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOIBUF_X115_Y40_N8
+cycloneive_io_ibuf \clc~input (
+	.i(clc),
+	.ibar(gnd),
+	.o(\clc~input_o ));
+// synopsys translate_off
+defparam \clc~input .bus_hold = "false";
+defparam \clc~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X115_Y15_N1
+cycloneive_io_ibuf \switch~input (
+	.i(switch),
+	.ibar(gnd),
+	.o(\switch~input_o ));
+// synopsys translate_off
+defparam \switch~input .bus_hold = "false";
+defparam \switch~input .simulate_z_as = "z";
+// synopsys translate_on
+
+assign ledline[0] = \ledline[0]~output_o ;
+
+assign ledline[1] = \ledline[1]~output_o ;
+
+assign ledline[2] = \ledline[2]~output_o ;
+
+assign ledline[3] = \ledline[3]~output_o ;
+
+assign ledline[4] = \ledline[4]~output_o ;
+
+assign ledline[5] = \ledline[5]~output_o ;
+
+assign ledline[6] = \ledline[6]~output_o ;
+
+endmodule

@@ -1,0 +1,27 @@
+|Test_01_seven_seg
+bitsbut[0] => Decoder0.IN3
+bitsbut[1] => Decoder0.IN2
+bitsbut[2] => Decoder0.IN1
+bitsbut[3] => Decoder0.IN0
+rstcountreg => countreg[0].ACLR
+rstcountreg => countreg[1].ACLR
+rstcountreg => countreg[2].ACLR
+rstcountreg => countreg[3].ACLR
+counterbtn => always0.IN1
+counterbtn => always0.IN1
+sevenseg[0] <= WideOr6.DB_MAX_OUTPUT_PORT_TYPE
+sevenseg[1] <= WideOr5.DB_MAX_OUTPUT_PORT_TYPE
+sevenseg[2] <= WideOr4.DB_MAX_OUTPUT_PORT_TYPE
+sevenseg[3] <= WideOr3.DB_MAX_OUTPUT_PORT_TYPE
+sevenseg[4] <= WideOr2.DB_MAX_OUTPUT_PORT_TYPE
+sevenseg[5] <= WideOr1.DB_MAX_OUTPUT_PORT_TYPE
+sevenseg[6] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+sevenseg2[0] <= WideOr13.DB_MAX_OUTPUT_PORT_TYPE
+sevenseg2[1] <= WideOr12.DB_MAX_OUTPUT_PORT_TYPE
+sevenseg2[2] <= WideOr11.DB_MAX_OUTPUT_PORT_TYPE
+sevenseg2[3] <= WideOr10.DB_MAX_OUTPUT_PORT_TYPE
+sevenseg2[4] <= WideOr9.DB_MAX_OUTPUT_PORT_TYPE
+sevenseg2[5] <= WideOr8.DB_MAX_OUTPUT_PORT_TYPE
+sevenseg2[6] <= WideOr7.DB_MAX_OUTPUT_PORT_TYPE
+
+

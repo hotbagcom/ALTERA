@@ -1,0 +1,15 @@
+vendor_name = ModelSim
+source_file = 1, C:/Users/Arif/Documents/FPGA/ALTERA/Test_0.v
+source_file = 1, C:/Users/Arif/Documents/FPGA/ALTERA/output_files/Chain1.cdf
+source_file = 1, C:/Users/Arif/Documents/FPGA/ALTERA/output_files/Chain3.cdf
+source_file = 1, C:/Users/Arif/Documents/FPGA/ALTERA/db/Test_0.cbx.xml
+design_name = Test_0
+instance = comp, \ledline[0]~output , ledline[0]~output, Test_0, 1
+instance = comp, \ledline[1]~output , ledline[1]~output, Test_0, 1
+instance = comp, \ledline[2]~output , ledline[2]~output, Test_0, 1
+instance = comp, \ledline[3]~output , ledline[3]~output, Test_0, 1
+instance = comp, \ledline[4]~output , ledline[4]~output, Test_0, 1
+instance = comp, \ledline[5]~output , ledline[5]~output, Test_0, 1
+instance = comp, \ledline[6]~output , ledline[6]~output, Test_0, 1
+instance = comp, \clc~input , clc~input, Test_0, 1
+instance = comp, \switch~input , switch~input, Test_0, 1

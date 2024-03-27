@@ -1,0 +1,18 @@
+|Test_0
+clc => ledline[6].DATAIN
+clc => ledline[5].DATAIN
+clc => ledline[4].DATAIN
+clc => ledline[3].DATAIN
+clc => ledline[2].DATAIN
+clc => ledline[1].DATAIN
+clc => ledline[0].DATAIN
+switch => ~NO_FANOUT~
+ledline[0] <= clc.DB_MAX_OUTPUT_PORT_TYPE
+ledline[1] <= clc.DB_MAX_OUTPUT_PORT_TYPE
+ledline[2] <= clc.DB_MAX_OUTPUT_PORT_TYPE
+ledline[3] <= clc.DB_MAX_OUTPUT_PORT_TYPE
+ledline[4] <= clc.DB_MAX_OUTPUT_PORT_TYPE
+ledline[5] <= clc.DB_MAX_OUTPUT_PORT_TYPE
+ledline[6] <= clc.DB_MAX_OUTPUT_PORT_TYPE
+
+
