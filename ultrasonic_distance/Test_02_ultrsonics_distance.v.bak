@@ -1,0 +1,2 @@
+//clock management
+//memory mamagement
