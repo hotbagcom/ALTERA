@@ -13,11 +13,11 @@ reg stepup =1'b0;
 reg [3:0]countreg=4'b0000;
 reg [3:0]countreg1=4'b0000;
 always @(*) begin
-	if(~stepup && ~counterbtn)begin//if push pressed
+	if( posedge counterbtn)begin//if push pressed
 		stepup <= 1'b1;//last status btn pressed
 		countreg <= countreg1 + 4'b0001;
 	end
-	else if( (stepup) && ~counterbtn)begin//if push released
+	else if( negedge counterbtn )begin//if push released
 		stepup <= 1'b0; // last status btn released
 		countreg1 <= countreg; 
 		
