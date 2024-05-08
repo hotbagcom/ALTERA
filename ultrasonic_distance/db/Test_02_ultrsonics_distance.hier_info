@@ -1,0 +1,22 @@
+|Test_02_ultrsonics_distance
+clk => ~NO_FANOUT~
+on_off => ~NO_FANOUT~
+echo => always0.IN1
+echo => always0.IN1
+trig <= trigstatus.DB_MAX_OUTPUT_PORT_TYPE
+ones[0] <= digitones[0].DB_MAX_OUTPUT_PORT_TYPE
+ones[1] <= digitones[1].DB_MAX_OUTPUT_PORT_TYPE
+ones[2] <= digitones[2].DB_MAX_OUTPUT_PORT_TYPE
+ones[3] <= digitones[3].DB_MAX_OUTPUT_PORT_TYPE
+ones[4] <= digitones[4].DB_MAX_OUTPUT_PORT_TYPE
+ones[5] <= digitones[5].DB_MAX_OUTPUT_PORT_TYPE
+ones[6] <= digitones[6].DB_MAX_OUTPUT_PORT_TYPE
+tens[0] <= digittens[0].DB_MAX_OUTPUT_PORT_TYPE
+tens[1] <= digittens[1].DB_MAX_OUTPUT_PORT_TYPE
+tens[2] <= digittens[2].DB_MAX_OUTPUT_PORT_TYPE
+tens[3] <= digittens[3].DB_MAX_OUTPUT_PORT_TYPE
+tens[4] <= digittens[4].DB_MAX_OUTPUT_PORT_TYPE
+tens[5] <= digittens[5].DB_MAX_OUTPUT_PORT_TYPE
+tens[6] <= digittens[6].DB_MAX_OUTPUT_PORT_TYPE
+
+
