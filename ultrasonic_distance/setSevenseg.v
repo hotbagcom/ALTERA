@@ -26,10 +26,6 @@ module setSevenseg(digit, sevenled);
 		 endcase
 	
 	end
-	
-	
-	
-
 
 endmodule
 

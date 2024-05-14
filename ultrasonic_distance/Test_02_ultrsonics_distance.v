@@ -53,10 +53,13 @@ always @(  clk) begin
 		stage  = 1'b0 ; //stop increment do the calculation 
 	//fonksiyon kullanmaya bak	
 		//setSevenseg led1( (waitfecho[18:15]) , (digitones));
+		setSevenseg(.digit(waitfecho[10:4]) ,.sevenled(digitones));
 		//setSevenseg led2( (waitfecho[14:11]) , (digittens));
+		setSevenseg(.digit(waitfecho[17:11]) ,.sevenled(digittens));
 	//fonksiyon yerine bit ata gitsin sadece kontrol için	
-		digitones <= waitfecho[14:8];
-		digittens  <= waitfecho[7:1];
+	
+		//digitones <= waitfecho[17:11];
+		//digittens  <= waitfecho[10:4];
 		
 		
 		waitfecho  = 19'd0;
@@ -82,8 +85,8 @@ always @(  clk) begin
 end
  
 assign  trig = trigstatus ;
-assign ones = digitones;
-assign tens = digittens;
+assign ones = ~digitones;
+assign tens = ~digittens;
 
  
 endmodule
