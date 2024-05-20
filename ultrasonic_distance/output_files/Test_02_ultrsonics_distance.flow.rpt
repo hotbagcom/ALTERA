@@ -1,5 +1,5 @@
 Flow report for Test_02_ultrsonics_distance
-Sun May 12 12:39:41 2024
+Mon May 20 17:21:12 2024
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Web Edition
 
 
@@ -40,22 +40,22 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------+
 ; Flow Summary                                                                    ;
 +------------------------------------+--------------------------------------------+
-; Flow Status                        ; Flow Failed - Sun May 12 12:39:41 2024     ;
+; Flow Status                        ; Successful - Mon May 20 17:21:12 2024      ;
 ; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Web Edition ;
 ; Revision Name                      ; Test_02_ultrsonics_distance                ;
 ; Top-level Entity Name              ; Test_02_ultrsonics_distance                ;
 ; Family                             ; Cyclone IV E                               ;
 ; Device                             ; EP4CE115F29C7                              ;
 ; Timing Models                      ; Final                                      ;
-; Total logic elements               ; N/A until Partition Merge                  ;
-;     Total combinational functions  ; N/A until Partition Merge                  ;
-;     Dedicated logic registers      ; N/A until Partition Merge                  ;
-; Total registers                    ; N/A until Partition Merge                  ;
-; Total pins                         ; N/A until Partition Merge                  ;
-; Total virtual pins                 ; N/A until Partition Merge                  ;
-; Total memory bits                  ; N/A until Partition Merge                  ;
-; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                  ;
-; Total PLLs                         ; N/A until Partition Merge                  ;
+; Total logic elements               ; 131 / 114,480 ( < 1 % )                    ;
+;     Total combinational functions  ; 131 / 114,480 ( < 1 % )                    ;
+;     Dedicated logic registers      ; 0 / 114,480 ( 0 % )                        ;
+; Total registers                    ; 0                                          ;
+; Total pins                         ; 18 / 529 ( 3 % )                           ;
+; Total virtual pins                 ; 0                                          ;
+; Total memory bits                  ; 0 / 3,981,312 ( 0 % )                      ;
+; Embedded Multiplier 9-bit elements ; 0 / 532 ( 0 % )                            ;
+; Total PLLs                         ; 0 / 4 ( 0 % )                              ;
 +------------------------------------+--------------------------------------------+
 
 
@@ -64,7 +64,7 @@ applicable agreement for further details.
 +-------------------+-----------------------------+
 ; Option            ; Setting                     ;
 +-------------------+-----------------------------+
-; Start date & time ; 05/12/2024 12:39:41         ;
+; Start date & time ; 05/20/2024 17:20:34         ;
 ; Main task         ; Compilation                 ;
 ; Revision Name     ; Test_02_ultrsonics_distance ;
 +-------------------+-----------------------------+
@@ -75,7 +75,7 @@ applicable agreement for further details.
 +-------------------------------------+---------------------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                                 ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+---------------------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 184849026020787.171550678109604       ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 184849026020787.171621483310676       ; --            ; --          ; --             ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl                           ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (Verilog)             ; <None>        ; --          ; --             ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                    ; --            ; --          ; --             ;
@@ -89,29 +89,41 @@ applicable agreement for further details.
 +-------------------------------------+---------------------------------------+---------------+-------------+----------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------+
-; Flow Elapsed Time                                                                                                        ;
-+----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
-+----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:01     ; 1.0                     ; 4596 MB             ; 00:00:01                           ;
-; Total                ; 00:00:01     ; --                      ; --                  ; 00:00:01                           ;
-+----------------------+--------------+-------------------------+---------------------+------------------------------------+
++-------------------------------------------------------------------------------------------------------------------------------+
+; Flow Elapsed Time                                                                                                             ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
+; Analysis & Synthesis      ; 00:00:01     ; 1.0                     ; 4606 MB             ; 00:00:01                           ;
+; Fitter                    ; 00:00:22     ; 1.0                     ; 5123 MB             ; 00:00:17                           ;
+; Assembler                 ; 00:00:05     ; 1.0                     ; 4592 MB             ; 00:00:04                           ;
+; TimeQuest Timing Analyzer ; 00:00:03     ; 1.0                     ; 4688 MB             ; 00:00:02                           ;
+; EDA Netlist Writer        ; 00:00:00     ; 1.0                     ; 4542 MB             ; 00:00:01                           ;
+; Total                     ; 00:00:31     ; --                      ; --                  ; 00:00:25                           ;
++---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
-+-----------------------------------------------------------------------------------+
-; Flow OS Summary                                                                   ;
-+----------------------+------------------+-----------+------------+----------------+
-; Module Name          ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
-+----------------------+------------------+-----------+------------+----------------+
-; Analysis & Synthesis ; DESKTOP-32B12JR  ; Windows 7 ; 6.2        ; x86_64         ;
-+----------------------+------------------+-----------+------------+----------------+
++----------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                        ;
++---------------------------+------------------+-----------+------------+----------------+
+; Module Name               ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
++---------------------------+------------------+-----------+------------+----------------+
+; Analysis & Synthesis      ; DESKTOP-32B12JR  ; Windows 7 ; 6.2        ; x86_64         ;
+; Fitter                    ; DESKTOP-32B12JR  ; Windows 7 ; 6.2        ; x86_64         ;
+; Assembler                 ; DESKTOP-32B12JR  ; Windows 7 ; 6.2        ; x86_64         ;
+; TimeQuest Timing Analyzer ; DESKTOP-32B12JR  ; Windows 7 ; 6.2        ; x86_64         ;
+; EDA Netlist Writer        ; DESKTOP-32B12JR  ; Windows 7 ; 6.2        ; x86_64         ;
++---------------------------+------------------+-----------+------------+----------------+
 
 
 ------------
 ; Flow Log ;
 ------------
 quartus_map --read_settings_files=on --write_settings_files=off Test_02_ultrsonics_distance -c Test_02_ultrsonics_distance
+quartus_fit --read_settings_files=off --write_settings_files=off Test_02_ultrsonics_distance -c Test_02_ultrsonics_distance
+quartus_asm --read_settings_files=off --write_settings_files=off Test_02_ultrsonics_distance -c Test_02_ultrsonics_distance
+quartus_sta Test_02_ultrsonics_distance -c Test_02_ultrsonics_distance
+quartus_eda --read_settings_files=off --write_settings_files=off Test_02_ultrsonics_distance -c Test_02_ultrsonics_distance
 
 
 
